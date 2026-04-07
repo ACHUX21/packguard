@@ -1,0 +1,11 @@
+# popular packages for typosquat detection - one per line
+react
+vue
+angular
+django
+flask
+express
+lodash
+moment
+axios
+request
