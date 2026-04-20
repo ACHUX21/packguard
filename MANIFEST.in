@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include src/packguard/resources *
+recursive-include config *.json
+recursive-include data/intel *.json *.txt
+recursive-include examples *

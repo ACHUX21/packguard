@@ -1,0 +1,17 @@
+# Curated popular package names used for typosquat detection.
+react
+next
+express
+axios
+lodash
+chalk
+webpack
+typescript
+django
+requests
+flask
+numpy
+pandas
+fastapi
+pytest
+uvicorn

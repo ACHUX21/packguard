@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Entry point for Malicious Package Detector."""
-import sys
-import os
+"""Convenience entrypoint for local development."""
 
-# Add src to path
+import os
+import sys
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
-from mpd.cli import main
+from packguard.cli import main
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

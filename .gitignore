@@ -7,8 +7,15 @@ dist/
 build/
 .env
 venv/
+.venv/
 *.log
 report.json
 *.tar.gz
 *.whl
 *.zip
+.pytest_cache/
+.ruff_cache/
+.coverage
+reports/
+.mypy_cache/
+.tox/

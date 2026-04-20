@@ -1,6 +1,1 @@
-requests
-beautifulsoup4
-lxml
-ollama
-python-dotenv
-jellyfish
+-e .[dev]

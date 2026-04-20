@@ -1,0 +1,20 @@
+[
+  {
+    "source": "npm",
+    "name": "browserlist",
+    "version": "1.0.0",
+    "summary": "Typosquatted package historically used to imitate browserslist.",
+    "references": [
+      "https://socket.dev/docs/sample-malware-packages"
+    ]
+  },
+  {
+    "source": "pypi",
+    "name": "ctx",
+    "version": "0.2.6",
+    "summary": "Compromised version associated with data exfiltration in the PyPI ecosystem.",
+    "references": [
+      "https://pypi.org/security"
+    ]
+  }
+]

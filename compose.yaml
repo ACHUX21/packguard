@@ -1,0 +1,10 @@
+services:
+  packguard:
+    build:
+      context: .
+    image: packguard:local
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    entrypoint: ["packguard"]
+    command: ["doctor"]

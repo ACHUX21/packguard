@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packguard"
+version = "0.2.0a0"
+description = "Offline-first supply chain malware scanner for npm and PyPI."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+  { name = "Packguard Maintainers" }
+]
+keywords = [
+  "security",
+  "supply-chain",
+  "malware",
+  "npm",
+  "pypi",
+  "ollama",
+  "offline"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.2",
+  "pytest>=8.2.0",
+  "ruff>=0.6.0",
+  "pre-commit>=3.8.0",
+]
+ollama = [
+  "ollama>=0.4.0",
+]
+yaml = [
+  "PyYAML>=6.0.2",
+]
+
+[project.scripts]
+packguard = "packguard.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.package-data]
+"packguard" = ["resources/intel/*.json", "resources/intel/*.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["packguard*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
